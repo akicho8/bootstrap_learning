@@ -1,5 +1,5 @@
-<!-- フォームの入力要素の disabled と readonly -->
-<!-- cursor: not-allowed になる -->
+<!-- 入力要素のグループを横に並べるには？ -->
+<!-- div.input の中に ul.inline-inputs を入れる -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -17,25 +17,25 @@
   <body>
 <div class="__hs_paginate">
 <a href="index.html">■</a>
-26 / 33
-    <a href="0173_form_grid_based_span_width.html" class="prev">戻る</a>
-    <a href="0196_form_uneditable_input.html" class="next">もっと見る</a>
+31 / 33
+    <a href="0210_form_inputs_list_for_vertical_list.html" class="prev">戻る</a>
+    <a href="0230_button.html" class="next">もっと見る</a>
 </div>
-    <h1 class="__hs__">フォームの入力要素の disabled と readonly</h1>
+    <h1 class="__hs__">入力要素のグループを横に並べるには？</h1>
 <div class="__hs_container __hs_clearfix">
 
     <div class="container">
       <form>
         <div class="clearfix">
-          <label>disabled</label>
+          <label>電話番号</label>
           <div class="input">
-            <input type="text" disabled="disabled" />
-          </div>
-        </div>
-        <div class="clearfix">
-          <label>readonly</label>
-          <div class="input">
-            <input type="text" readonly="readonly" />
+            <div class="inline-inputs">
+              <input type="text" class="mini" />
+              -
+              <input type="text" class="small" />
+              -
+              <input type="text" class="small" />
+            </div>
           </div>
         </div>
       </form>
@@ -46,15 +46,15 @@
   <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
   &lt;form&gt;
     &lt;div class=&quot;clearfix&quot;&gt;
-      &lt;label&gt;disabled&lt;/label&gt;
+      &lt;label&gt;電話番号&lt;/label&gt;
       &lt;div class=&quot;input&quot;&gt;
-        &lt;input type=&quot;text&quot; disabled=&quot;disabled&quot; /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;clearfix&quot;&gt;
-      &lt;label&gt;readonly&lt;/label&gt;
-      &lt;div class=&quot;input&quot;&gt;
-        &lt;input type=&quot;text&quot; readonly=&quot;readonly&quot; /&gt;
+        &lt;div class=&quot;inline-inputs&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;mini&quot; /&gt;
+          -
+          &lt;input type=&quot;text&quot; class=&quot;small&quot; /&gt;
+          -
+          &lt;input type=&quot;text&quot; class=&quot;small&quot; /&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/form&gt;
@@ -62,13 +62,13 @@
 </section>
 <section class="__hs__">
   <h2>MEMO</h2>
-  <pre class="">cursor: not-allowed になる</pre>
+  <pre class="">div.input の中に ul.inline-inputs を入れる</pre>
 </section>
 <div class="__hs_paginate">
 <a href="index.html">■</a>
-26 / 33
-    <a href="0173_form_grid_based_span_width.html" class="prev">戻る</a>
-    <a href="0196_form_uneditable_input.html" class="next">もっと見る</a>
+31 / 33
+    <a href="0210_form_inputs_list_for_vertical_list.html" class="prev">戻る</a>
+    <a href="0230_button.html" class="next">もっと見る</a>
 </div>
 </body>
 
