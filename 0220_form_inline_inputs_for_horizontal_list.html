@@ -1,0 +1,28 @@
+<!-- 入力要素のグループを横に並べるには？ -->
+<!-- div.input の中に ul.inline-inputs を入れる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="clearfix">
+          <label>電話番号</label>
+          <div class="input">
+            <div class="inline-inputs">
+              <input type="text" class="mini" />
+              -
+              <input type="text" class="small" />
+              -
+              <input type="text" class="small" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

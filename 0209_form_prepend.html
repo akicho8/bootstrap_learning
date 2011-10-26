@@ -1,0 +1,44 @@
+<!-- 入力フィールドの最後にフィールドの一部っぽいテキストをくっつけるには？ -->
+<!-- div.input input-append input span.add-on で後ろ -->
+<!-- 前後につけることはできない -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="clearfix">
+          <label>その1</label>
+          <div class="input">
+            <div class="input-append">
+              <input type="text" />
+              <span class="add-on">.co.jp</span>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <label>その2</label>
+          <div class="input">
+            <div class="input-append">
+              <input type="text" />
+              <label class="add-on"><input type="checkbox" /></label>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <label>その3</label>
+          <div class="input">
+            <div class="input-append">
+              <input type="text" />
+              <label class="add-on active"><input type="checkbox" checked="checked" /></label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

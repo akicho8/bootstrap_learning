@@ -1,0 +1,85 @@
+<!-- フォームの入力要素の横幅をグリッドに合わせるには？ -->
+<!-- span1-16 -->
+<!-- グリッドベースの横幅指定をするときは form-stacked にしておくと合わせやすい -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<script src="jquery.js" type="text/javascript"></script>
+
+<link href="application.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+</head>
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+25 / 30
+    <a href="0162_form_stacked.html" class="prev">戻る</a>
+    <a href="0184_form_disabled_readonly.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">フォームの入力要素の横幅をグリッドに合わせるには？</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <form class="form-stacked">
+        <div class="clearfix"><label>span1</label><div class="input"><input type="text" class="span1" /></div></div>
+        <div class="clearfix"><label>span2</label><div class="input"><input type="text" class="span2" /></div></div>
+        <div class="clearfix"><label>span3</label><div class="input"><input type="text" class="span3" /></div></div>
+        <div class="clearfix"><label>span4</label><div class="input"><input type="text" class="span4" /></div></div>
+        <div class="clearfix"><label>span5</label><div class="input"><input type="text" class="span5" /></div></div>
+        <div class="clearfix"><label>span6</label><div class="input"><input type="text" class="span6" /></div></div>
+        <div class="clearfix"><label>span7</label><div class="input"><input type="text" class="span7" /></div></div>
+        <div class="clearfix"><label>span8</label><div class="input"><input type="text" class="span8" /></div></div>
+        <div class="clearfix"><label>span9</label><div class="input"><input type="text" class="span9" /></div></div>
+        <div class="clearfix"><label>span10</label><div class="input"><input type="text" class="span10" /></div></div>
+        <div class="clearfix"><label>span11</label><div class="input"><input type="text" class="span11" /></div></div>
+        <div class="clearfix"><label>span12</label><div class="input"><input type="text" class="span12" /></div></div>
+        <div class="clearfix"><label>span13</label><div class="input"><input type="text" class="span13" /></div></div>
+        <div class="clearfix"><label>span14</label><div class="input"><input type="text" class="span14" /></div></div>
+        <div class="clearfix"><label>span15</label><div class="input"><input type="text" class="span15" /></div></div>
+        <div class="clearfix"><label>span16</label><div class="input"><input type="text" class="span16" /></div></div>
+      </form>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2>HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;form class=&quot;form-stacked&quot;&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span1&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span1&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span2&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span2&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span3&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span3&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span4&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span4&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span5&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span5&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span6&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span6&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span7&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span7&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span8&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span8&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span9&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span9&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span10&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span10&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span11&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span11&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span12&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span12&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span13&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span13&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span14&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span14&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span15&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span15&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;label&gt;span16&lt;/label&gt;&lt;div class=&quot;input&quot;&gt;&lt;input type=&quot;text&quot; class=&quot;span16&quot; /&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2>MEMO</h2>
+  <pre class="">span1-16
+グリッドベースの横幅指定をするときは form-stacked にしておくと合わせやすい</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+25 / 30
+    <a href="0162_form_stacked.html" class="prev">戻る</a>
+    <a href="0184_form_disabled_readonly.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>

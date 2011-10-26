@@ -1,0 +1,109 @@
+<!-- 画像や動画を綺麗にたくさん並べる -->
+<!-- span2=90px span4=210px span6=330px にすると幅がぴったり合う -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<script src="jquery.js" type="text/javascript"></script>
+
+<link href="application.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .span4 {
+      background: #aaa;
+      min-height: 512px;
+      }
+    </style>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+</head>
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+19 / 30
+    <a href="0130_media_grid_basic.html" class="prev">戻る</a>
+    <a href="0140_form_basic.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">画像や動画を綺麗にたくさん並べる</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h3>span12の領域</h3>
+          <h4>span12 には span6 相当の横330pxが2つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="330" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="330" /></a></li>
+          </ul>
+          <h4>span12 には span4 相当の横210pxが3つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="210" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="210" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="210" /></a></li>
+          </ul>
+          <h4>span12 には span2 相当の横90pxが6つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/gallery/0001.jpg" width="90" /></a></li>
+          </ul>
+        </div>
+        <div class="span4">
+          <h4>span4の領域</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2>HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;span12&quot;&gt;
+      &lt;h3&gt;span12の領域&lt;/h3&gt;
+      &lt;h4&gt;span12 には span6 相当の横330pxが2つ収まる&lt;/h4&gt;
+      &lt;ul class=&quot;media-grid&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;330&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;330&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h4&gt;span12 には span4 相当の横210pxが3つ収まる&lt;/h4&gt;
+      &lt;ul class=&quot;media-grid&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;210&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;210&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;210&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;h4&gt;span12 には span2 相当の横90pxが6つ収まる&lt;/h4&gt;
+      &lt;ul class=&quot;media-grid&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/gallery/0001.jpg&quot; width=&quot;90&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;span4&quot;&gt;
+      &lt;h4&gt;span4の領域&lt;/h4&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2>MEMO</h2>
+  <pre class="">span2=90px span4=210px span6=330px にすると幅がぴったり合う</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+19 / 30
+    <a href="0130_media_grid_basic.html" class="prev">戻る</a>
+    <a href="0140_form_basic.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>
