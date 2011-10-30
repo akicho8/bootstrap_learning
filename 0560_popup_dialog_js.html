@@ -1,0 +1,35 @@
+<!-- ポップアップダイアログを通常リンクから起動する例 -->
+<!-- ダイアログへの引数は呼び出し側のタグの data-xxx 属性で指定する -->
+<!-- data-controls-modal = 対応するダイアログのID -->
+<!-- data-backdrop = true:他の部分をクリックするとダイアログを閉じる false:閉じない(背景もそのまま) static:閉じない(背景黒) -->
+<!-- data-keyboard = true:ESCで閉じる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a class="btn" data-controls-modal="my-modal" data-backdrop="true" data-keyboard="true">起動</a>
+
+      <div class="modal hide fade" id="my-modal">
+        <div class="modal-header">
+          <a href="#" class="close">&times;</a>
+          <h3>ヘッダー</h3>
+        </div>
+        <div class="modal-body">
+          <p>本体</p>
+        </div>
+        <div class="modal-footer">
+          <p>フッター</p>
+          <a href="#" class="btn primary">ボタン1</a>
+          <a href="#" class="btn">ボタン2</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<!-- タブ - 横幅が足りないのでドロップダウンにする例 -->
+<!-- タブ(円形) -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -11,22 +11,15 @@
   </head>
   <body>
     <div class="container">
-      <ul class="tabs" data-tabs="tabs">
+      <ul class="pills" data-pills="pills">
         <li class="active"><a href="#home">ホーム</a></li>
         <li><a href="#profile">プロフィール</a></li>
-        <li class="dropdown" data-dropdown="dropdown">
-          <a href="#" class="dropdown-toggle">設定</a>
-          <ul class="dropdown-menu">
-            <li><a href="#avatar">アバター</a></li>
-            <li><a href="#api">API</a></li>
-          </ul>
-        </li>
+        <li><a href="#settings">設定</a></li>
       </ul>
       <div class="tab-content">
         <div class="active" id="home">A</div>
         <div id="profile">B</div>
-        <div id="avatar">C</div>
-        <div id="api">D</div>
+        <div id="settings">C</div>
       </div>
     </div>
   </body>

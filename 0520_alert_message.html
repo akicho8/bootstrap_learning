@@ -1,0 +1,80 @@
+<!-- アラートメッセージ -->
+<!-- 閉じる機能をつける場合は bootstrap-alerts.js が必要 -->
+<!-- data-alert 属性があれば自動的に $.alert が反応する -->
+<!-- block-message クラスをつけると複数行用の淡い色になる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-alerts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>1行だけの通知</h3>
+      <div class="alert-message info">
+        <p>親譲りの無鉄砲で小供の時から損ばかりしている。</p>
+      </div>
+
+      <h3>複数行に渡るテキストを通知する例</h3>
+      <div class="alert-message block-message info">
+        <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。</p>
+      </div>
+
+      <h3>1行用 + 閉じるボタン付き(x4色)</h3>
+      <div class="alert-message info" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Info: </strong>メッセージが1件届いています</p>
+      </div>
+      <div class="alert-message success" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Success: </strong>完了しました</p>
+      </div>
+      <div class="alert-message warning" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Warning: </strong>ニックネームを入力してください</p>
+      </div>
+      <div class="alert-message error" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Error: </strong>エラーが発生しました</p>
+      </div>
+
+      <h3>複数行用 + 閉じるボタン + ボタングループ (x4色)</h3>
+      <div class="alert-message block-message info" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Info: </strong>メッセージが1件届いています</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message success" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Success: </strong>完了しました</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message warning" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Warning: </strong>ニックネームを入力してください</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message error" data-alert="true">
+        <a class="close">&times;</a>
+        <p><strong>Error: </strong>エラーが発生しました</p>
+        <ul>
+          <li>あれを入力してください</li>
+          <li>これも入力してください</li>
+          <li>それも入力してください</li>
+        </ul>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
