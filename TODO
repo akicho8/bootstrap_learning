@@ -1,7 +1,6 @@
 * ~/src/bootstrap/docs/assets/js/application.js
-* ボタンの機能だけを使いたいときはどうする？
+* ボタンの機能だけを使いたいときはどうする？ → まだできない。2.0 に期待
 * レイアウト例
 * 全部メモに入れる
 * デザパタっぽいものを探す
-* dropdown を単体で使う例
-* ここでも編集できる？
+* <body style="padding-top: 40px">

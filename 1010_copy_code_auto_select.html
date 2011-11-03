@@ -1,4 +1,4 @@
-<!-- コピペしてもらうためのフィールドを作るには？ -->
+<!-- クリックするだけで全選択するには？ -->
 <!-- $(".copy-code") にフォーカスされたら $(this).select() する -->
 <!-- Firefoxだとそれだけで動くが、Chrome だと setTimeout が必要になる -->
 <!DOCTYPE html>
@@ -23,9 +23,14 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <input type="text" class="copy-code" value="http://www.google.co.jp/" />
-        <textarea class="copy-code" rows="1">http://www.google.co.jp/</textarea>
+      <form class="form-stacked">
+        <div class="clearfix">
+          <label>生成コード</label>
+          <div class="input">
+            <textarea class="copy-code large" rows="4" style="overflow: hidden"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm13401"></script><noscript><a href="http://www.nicovideo.jp/watch/sm13401">【ニコニコ動画】(ｽｰﾊﾟｰﾌﾟﾚｲ)(ﾖｰﾖｰ)worodl yo-yo- contest 2005 2A 1st - Shinji Saito</a></noscript></textarea>
+            <span class="help-block">クリックして CTRL + c でコピーしてください</span>
+          </div>
+        </div>
       </form>
     </div>
   </body>

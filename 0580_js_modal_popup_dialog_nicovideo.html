@@ -1,5 +1,5 @@
-<!-- ポップアップの中でiframeを表示する例 -->
-<!-- Youtubeは横480じゃないとはみ出てしまう -->
+<!-- ポップアップの中でニコニコ動画を表示する例 -->
+<!-- ニコ動の再生プレイヤーの横幅は決まっている。おそらく480px -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -11,14 +11,14 @@
   </head>
   <body>
     <div class="container">
-      <a class="btn" data-controls-modal="main" data-backdrop="true" data-keyboard="true">Youtube</a>
+      <a class="btn" data-controls-modal="main" data-backdrop="true" data-keyboard="true" href="#">ニコ動</a>
       <div class="modal hide fade" id="main">
         <div class="modal-header">
           <a href="#" class="close">&times;</a>
-          <h3>栗原舞のヨーヨー 静岡大道芸ワールドカップ2010</h3>
+          <h3>【日常MAD】日常・ザ・ファイヤー</h3>
         </div>
         <div class="modal-body">
-          <iframe width="480" height="390" src="http://www.youtube.com/embed/TecVgDJO4cM" frameborder="0" allowfullscreen></iframe>
+          <script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm15384779"></script>
         </div>
         <div class="modal-footer">
           <a href="#" class="btn primary">もっと見る</a>

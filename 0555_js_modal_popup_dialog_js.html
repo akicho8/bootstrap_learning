@@ -1,5 +1,4 @@
-<!-- ポップアップダイアログ -->
-<!-- data-alert 属性があれば自動的に $.alert が反応する -->
+<!-- ポップアップダイアログの基本 -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -7,10 +6,12 @@
     <meta charset="UTF-8" />
     <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
-      <div class="modal">
+      <a data-controls-modal="main" data-backdrop="true" data-keyboard="true" href="#">起動</a>
+      <div class="modal hide" id="main">
         <div class="modal-header">
           <a href="#" class="close">&times;</a>
           <h3>ヘッダー</h3>
