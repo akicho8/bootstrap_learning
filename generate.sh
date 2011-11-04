@@ -1,2 +1,2 @@
 #!/bin/sh
-htmlshow --reset --open
+htmlshow --reset --open --static
