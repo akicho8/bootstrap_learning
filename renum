@@ -1,0 +1,18 @@
+#!/usr/local/bin/ruby -Ku
+# -*- coding: utf-8 -*-
+
+require "pathname"
+require "fileutils"
+
+Pathname.glob("[0-9]*.html").sort.each_with_index{|file, i|
+  num = "%04d" % (i.next * 10)
+  filename = file.basename.to_s.gsub(/^\d+/, num)
+  if filename == file.basename.to_s
+    puts "skip: #{filename}"
+  else
+    puts "#{filename} <= #{file}"
+    if ARGV.include?("-x")
+      FileUtils.mv(file, filename, :verbose => true)
+    end
+  end
+}

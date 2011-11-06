@@ -1,0 +1,83 @@
+<!-- フォームの基本 -->
+<!-- ラベルはlabelタグ囲む → 左にfloatされる -->
+<!-- 入力要素は div.input で囲む → 右にfloatされる -->
+<!-- label と div.input をまとめて div.clearfix で囲む -->
+<!-- 囲まないと上下のマージンが0になってしまう -->
+<!-- submitボタンは div.actions で囲むと背景が灰色になって入力要素の列に揃う -->
+<!-- submitボタンは最低限 input.btn にすること -->
+<!-- そうしないと無効のようなデザインが当たってない状態に見える -->
+<!-- ラベルは全角10文字で折り返す -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<script src="jquery.js" type="text/javascript"></script>
+
+<link href="application.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+</head>
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+26 / 74
+    <a href="0250_form_uneditable_input.html" class="prev">戻る</a>
+    <a href="0270_form_append.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">フォームの基本</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <form>
+        <div class="clearfix">
+          <label>題名</label>
+          <div class="input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="actions">
+          <input type="submit" class="btn" value="送信" />
+        </div>
+      </form>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2>HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;form&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+      &lt;label&gt;題名&lt;/label&gt;
+      &lt;div class=&quot;input&quot;&gt;
+        &lt;input type=&quot;text&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+      &lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;送信&quot; /&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2>MEMO</h2>
+  <pre class="">ラベルはlabelタグ囲む → 左にfloatされる
+入力要素は div.input で囲む → 右にfloatされる
+label と div.input をまとめて div.clearfix で囲む
+囲まないと上下のマージンが0になってしまう
+submitボタンは div.actions で囲むと背景が灰色になって入力要素の列に揃う
+submitボタンは最低限 input.btn にすること
+そうしないと無効のようなデザインが当たってない状態に見える
+ラベルは全角10文字で折り返す</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html">■</a>
+26 / 74
+    <a href="0250_form_uneditable_input.html" class="prev">戻る</a>
+    <a href="0270_form_append.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>
