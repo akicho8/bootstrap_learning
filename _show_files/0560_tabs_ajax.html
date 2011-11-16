@@ -1,0 +1,137 @@
+<!-- タブの切り替えトリガーに反応してAjax -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-tabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".tabs a").change(function(e){
+          var href = $(e.target).attr("href");
+          if ($(href).html() === "") {
+            if (href === "#t1") {
+              $.ajax({
+                url: "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&output=json&q=" + encodeURIComponent("http://b.hatena.ne.jp/hotentry.rss") + "&callback=?",
+                dataType: "json",
+                success: function(data) {
+                  $.each(data.responseData.feed.entries, function(i, entry) {
+                    $(href).append(entry.content);
+                  });
+                }
+              });
+            }
+            if (href === "#t2") {
+              $.ajax({
+                url: "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&num=10&q=" + encodeURIComponent("初音ミク") + "&callback=?",
+                dataType: "json",
+                success: function(data) {
+                  $(href).append("<ul class='media-grid'></ul>")
+                  $.each(data.responseData.results, function(i, entry) {
+                    $(".media-grid", href).append('<li><a href="#"><img src="' + entry.url + '" height="128" /></a></li>');
+                  });
+                }
+              });
+            }
+            if (href === "#t3") {
+              $(href).append('<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E7%A7%8B%E8%91%89%E5%8E%9F&amp;aq=&amp;sll=35.680377,139.730215&amp;sspn=0.033116,0.077162&amp;vpsrc=0&amp;brcurrent=3,0x60188c0c0b13f54d:0xb630953beee48188,0&amp;ie=UTF8&amp;hq=&amp;hnear=%E7%A7%8B%E8%91%89%E5%8E%9F%E9%A7%85%EF%BC%88%E6%9D%B1%E4%BA%AC%EF%BC%89&amp;t=m&amp;ll=35.69871,139.774246&amp;spn=0.033457,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E7%A7%8B%E8%91%89%E5%8E%9F&amp;aq=&amp;sll=35.680377,139.730215&amp;sspn=0.033116,0.077162&amp;vpsrc=0&amp;brcurrent=3,0x60188c0c0b13f54d:0xb630953beee48188,0&amp;ie=UTF8&amp;hq=&amp;hnear=%E7%A7%8B%E8%91%89%E5%8E%9F%E9%A7%85%EF%BC%88%E6%9D%B1%E4%BA%AC%EF%BC%89&amp;t=m&amp;ll=35.69871,139.774246&amp;spn=0.033457,0.054932&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">大きな地図で見る</a></small>');
+            }
+          }
+        });
+        // $(".tabs a[href=#t1]").click();
+      });
+    </script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+56 / 83
+    <a href="0550_tabs_trigger.html" class="prev">戻る</a>
+    <a href="0570_tabs_pills.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">56. タブの切り替えトリガーに反応してAjax</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <ul class="tabs" data-tabs="tabs">
+        <li><a href="#t1">はてブ</a></li>
+        <li><a href="#t2">画像検索</a></li>
+        <li><a href="#t3">地図</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="t1"></div>
+        <div id="t2"></div>
+        <div id="t3"></div>
+      </div>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;ul class=&quot;tabs&quot; data-tabs=&quot;tabs&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#t1&quot;&gt;はてブ&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#t2&quot;&gt;画像検索&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#t3&quot;&gt;地図&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div id=&quot;t1&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;t2&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;t3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">JavaScript</h2>
+  <pre class="prettyprint linenums">$(&quot;.tabs a&quot;).change(function(e){
+  var href = $(e.target).attr(&quot;href&quot;);
+  if ($(href).html() === &quot;&quot;) {
+    if (href === &quot;#t1&quot;) {
+      $.ajax({
+        url: &quot;http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&amp;num=10&amp;output=json&amp;q=&quot; + encodeURIComponent(&quot;http://b.hatena.ne.jp/hotentry.rss&quot;) + &quot;&amp;callback=?&quot;,
+        dataType: &quot;json&quot;,
+        success: function(data) {
+          $.each(data.responseData.feed.entries, function(i, entry) {
+            $(href).append(entry.content);
+          });
+        }
+      });
+    }
+    if (href === &quot;#t2&quot;) {
+      $.ajax({
+        url: &quot;https://ajax.googleapis.com/ajax/services/search/images?v=1.0&amp;num=10&amp;q=&quot; + encodeURIComponent(&quot;初音ミク&quot;) + &quot;&amp;callback=?&quot;,
+        dataType: &quot;json&quot;,
+        success: function(data) {
+          $(href).append(&quot;&lt;ul class='media-grid'&gt;&lt;/ul&gt;&quot;)
+          $.each(data.responseData.results, function(i, entry) {
+            $(&quot;.media-grid&quot;, href).append('&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;' + entry.url + '&quot; height=&quot;128&quot; /&gt;&lt;/a&gt;&lt;/li&gt;');
+          });
+        }
+      });
+    }
+    if (href === &quot;#t3&quot;) {
+      $(href).append('&lt;iframe width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;http://maps.google.co.jp/maps?f=q&amp;amp;source=s_q&amp;amp;hl=ja&amp;amp;geocode=&amp;amp;q=%E7%A7%8B%E8%91%89%E5%8E%9F&amp;amp;aq=&amp;amp;sll=35.680377,139.730215&amp;amp;sspn=0.033116,0.077162&amp;amp;vpsrc=0&amp;amp;brcurrent=3,0x60188c0c0b13f54d:0xb630953beee48188,0&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=%E7%A7%8B%E8%91%89%E5%8E%9F%E9%A7%85%EF%BC%88%E6%9D%B1%E4%BA%AC%EF%BC%89&amp;amp;t=m&amp;amp;ll=35.69871,139.774246&amp;amp;spn=0.033457,0.054932&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;http://maps.google.co.jp/maps?f=q&amp;amp;source=embed&amp;amp;hl=ja&amp;amp;geocode=&amp;amp;q=%E7%A7%8B%E8%91%89%E5%8E%9F&amp;amp;aq=&amp;amp;sll=35.680377,139.730215&amp;amp;sspn=0.033116,0.077162&amp;amp;vpsrc=0&amp;amp;brcurrent=3,0x60188c0c0b13f54d:0xb630953beee48188,0&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=%E7%A7%8B%E8%91%89%E5%8E%9F%E9%A7%85%EF%BC%88%E6%9D%B1%E4%BA%AC%EF%BC%89&amp;amp;t=m&amp;amp;ll=35.69871,139.774246&amp;amp;spn=0.033457,0.054932&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;大きな地図で見る&lt;/a&gt;&lt;/small&gt;');
+    }
+  }
+});
+// $(&quot;.tabs a[href=#t1]&quot;).click();
+</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+56 / 83
+    <a href="0550_tabs_trigger.html" class="prev">戻る</a>
+    <a href="0570_tabs_pills.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>

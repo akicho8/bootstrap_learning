@@ -1,0 +1,33 @@
+<!-- フォームの基本 -->
+<!-- ラベルはlabelタグ囲む → 左にfloatされる -->
+<!-- 入力要素は div.input で囲む → 右にfloatされる -->
+<!-- label と div.input をまとめて div.clearfix で囲む -->
+<!-- 囲まないと上下のマージンが0になってしまう -->
+<!-- submitボタンは div.actions で囲むと背景が灰色になって入力要素の列に揃う -->
+<!-- submitボタンは最低限 input.btn にすること -->
+<!-- そうしないと無効のようなデザインが当たってない状態に見える -->
+<!-- ラベルは全角10文字で折り返す -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="clearfix">
+          <label>発言</label>
+          <div class="input">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="actions">
+          <input type="submit" class="btn" value="保存" />
+          <input type="submit" class="btn primary" value="送信" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

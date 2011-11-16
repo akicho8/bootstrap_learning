@@ -1,0 +1,322 @@
+<!-- レイアウトデモ -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="assets/demo.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-scrollspy.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="topbar" data-dropdown="dropdown" data-scrollspy="scrollspy">
+      <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="#">なんとか商店</a></h3>
+          <ul class="nav">
+            <li><a href="#payment">料金</a></li>
+            <li><a href="#whatgeon">なんとか療法</a></li>
+            <li><a href="#opentimes">診療時間</a></li>
+            <li><a href="#pictures">院内風景</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">その他</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">なんとか療法</a></li>
+                <li class="divider"></li>
+                <li><a href="#">かんとか療法</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="pull-right">
+            <input type="text" class="small" placeholder="ユーザー名" />
+            <input type="password" class="small" placeholder="パスワード" />
+            <button type="submit" class="btn">ログイン</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <div class="hero-unit">
+          <h1>なんとか商店</h1>
+          <p>カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。</p>
+          <p><a class="btn primary large">もっと読む &raquo;</a></p>
+        </div>
+
+        <div class="row">
+          <div class="span-one-third">
+            <h2>なんとか療法</h2>
+            <p>
+              カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。
+            </p>
+          </div>
+          <div class="span-one-third">
+            <h2>診療時間</h2>
+            <p>ご予約TEL 090-123-4567</p>
+            <p>健康に関するご相談も受けたまわっております。気軽にご相談ください。</p>
+            <table class="zebra-striped">
+              <thead>
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th style="color:blue">土</th>
+                  <th style="color:red">日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>08:30 - 11:30</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td></tr>
+                <tr><td>14:00 - 16:30</td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td></tr>
+                <tr><td>16:00 - 19:30</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="span-one-third">
+            <h2>場所</h2>
+            <p>
+              大阪府世田谷区上六万寺町1-2-3<br/>
+              近鉄奈良線「瓢箪山」徒歩18分<br/>
+              外環状線 六万時交差点 東へ 車3分
+            </p>
+            <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps?f=q&amp;source=s_q&amp;hl=ja&amp;geocode=&amp;q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%8A%E5%85%AD%E4%B8%87%E5%AF%BA%E7%94%BA%EF%BC%92%E2%88%92%EF%BC%94%EF%BC%97&amp;sll=34.649463,135.691237&amp;sspn=0.002352,0.006866&amp;vpsrc=0&amp;brcurrent=3,0x60012126a86246c5:0x51fffe26baae05bd,0,0x6001212417960e19:0xe8f59c7afaf8fa5d&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%8A%E5%85%AD%E4%B8%87%E5%AF%BA%E7%94%BA%EF%BC%92%E2%88%92%EF%BC%94%EF%BC%97&amp;t=m&amp;ll=34.655239,135.643129&amp;spn=0.021181,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.co.jp/maps?f=q&amp;source=embed&amp;hl=ja&amp;geocode=&amp;q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%8A%E5%85%AD%E4%B8%87%E5%AF%BA%E7%94%BA%EF%BC%92%E2%88%92%EF%BC%94%EF%BC%97&amp;sll=34.649463,135.691237&amp;sspn=0.002352,0.006866&amp;vpsrc=0&amp;brcurrent=3,0x60012126a86246c5:0x51fffe26baae05bd,0,0x6001212417960e19:0xe8f59c7afaf8fa5d&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%A4%A7%E9%98%AA%E5%BA%9C%E6%9D%B1%E5%A4%A7%E9%98%AA%E5%B8%82%E4%B8%8A%E5%85%AD%E4%B8%87%E5%AF%BA%E7%94%BA%EF%BC%92%E2%88%92%EF%BC%94%EF%BC%97&amp;t=m&amp;ll=34.655239,135.643129&amp;spn=0.021181,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">大きな地図で見る</a></small>
+            <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <section id="payment">
+        <div class="page-header">
+          <h1>料金</h1>
+        </div>
+        <div class="row">
+          <div class="span5">
+            <h2>通常診療</h2>
+            <p>なんとか療法をされる場合となります</p>
+            <table class="zebra-striped">
+              <thead>
+                <tr>
+                  <th>ケース</th>
+                  <th>診療料</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>初回</td><td>2,600 〜 3,200 円</td></tr>
+                <tr><td>次回</td><td>2,000 〜 2,300 円</td></tr>
+              </tbody>
+            </table>
+            <p><strong>その他:</strong> テーピング、湿布などの材料費 ￥200〜</p>
+          </div>
+
+          <div class="span5">
+            <h2>保険診療</h2>
+            <p>急性の外傷等の適応症状に限ります</p>
+            <table class="zebra-striped">
+              <thead>
+                <tr>
+                  <th>ケース</th>
+                  <th>診療料</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>初回</td><td>1,200 円</td></tr>
+                <tr><td>次回</td><td>200 〜 600 円</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="span6">
+            <h2>小顔＆バランス＆リフトアップ</h2>
+            <p>急性の外傷等の適応症状に限ります</p>
+
+            <table class="zebra-striped">
+              <thead>
+                <tr>
+                  <th>コース</th>
+                  <th>料金</th>
+                  <th>モニター料金</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>ベーシック</td><td>31,500 円</td><td>26,500 円</td></tr>
+                <tr><td>プレミアム</td><td>55,000 円</td><td>46,500 円</td></tr>
+                <tr><td>増髪</td><td>10,000 円</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="whatgeon">
+        <div class="page-header">
+          <h1>なんとか療法</h1>
+        </div>
+        <div class="row">
+          <div class="span16">
+            <h3>なんとか療法とは</h3>
+            <p>
+              カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <p><img src="assets/0001.jpg" width="210" /></p>
+          </div>
+          <div class="span12">
+            <h3>1. 検査</h3>
+            <p>
+              カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <p><img src="assets/0001.jpg" width="210" /></p>
+          </div>
+          <div class="span12">
+            <h3>2. 補正</h3>
+            <p>
+              カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <p><img src="assets/0001.jpg" width="210" /></p>
+          </div>
+          <div class="span12">
+            <h3>3. 確認・施術修了</h3>
+            <p>
+              カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <h3>施術の様子</h3>
+            <ul class="media-grid">
+              <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="opentimes">
+        <div class="page-header">
+          <h1>診療時間</h1>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <h2>ご予約TEL 090-123-4567</h2>
+            <p>健康に関するご相談も受けたまわっております。気軽にご相談ください。</p>
+          </div>
+          <div class="span12">
+            <table class="zebra-striped">
+              <thead>
+                <tr>
+                  <th>診療時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th style="color:blue">土</th>
+                  <th style="color:red">日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>08:30 - 11:30</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td>○</td><td></td></tr>
+                <tr><td>14:00 - 16:30</td><td></td><td></td><td></td><td>○</td><td></td><td>○</td><td></td></tr>
+                <tr><td>16:00 - 19:30</td><td>○</td><td>○</td><td>○</td><td></td><td>○</td><td></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="pictures">
+        <div class="page-header">
+          <h1>院内風景</h1>
+        </div>
+        <div class="row">
+          <div class="span16">
+            <ul class="media-grid">
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+              <li><a href="#"><img src="assets/0001.jpg" width="210" />あああ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="page-header">
+          <h1>お問い合わせ</h1>
+        </div>
+        <div class="row">
+          <div class="span16">
+            <form>
+              <div class="clearfix">
+                <label>種類</label>
+                <div class="input">
+                  <ul class="inputs-list">
+                    <li><label><input type="radio" name="group1" /> <span>ご予約</span></label></li>
+                    <li><label><input type="radio" name="group1" /> <span>健康についての相談</span></label></li>
+                    <li><label><input type="radio" name="group1" /> <span>料金についての相談</span></label></li>
+                    <li><label><input type="radio" name="group1" /> <span>その他</span></label></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clearfix">
+                <label>内容</label>
+                <div class="input">
+                  <textarea rows="8" class="xxlarge" placeholder="内容をかくところ"></textarea>
+                  <!-- <span class="help-inline">10文字以内で入力してください</span> -->
+                </div>
+              </div>
+              <div class="actions">
+                <!-- <input type="submit" class="btn" value="キャンセル" /> -->
+                <input type="submit" class="btn primary" value="送信" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">上に戻る</a></p>
+        <p>
+          Copyright (c) なんとか商店<br/>
+          大阪府世田谷区上六万寺町1-2-3<br/>
+          お電話 090-123-4567<br/>
+          メール <a href="mailto:alice@example.com">alice@example.com</a><br/>
+          Twitter <a href="http://twitter.com/alice" target="_blank">@alice</a><br/>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

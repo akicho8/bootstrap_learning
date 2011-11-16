@@ -1,0 +1,57 @@
+<!-- グリッドレイアウトをネストする -->
+<!-- div.row を入れるたびに幅を相対的に指定できるわけではないので注意！ -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .row {
+        margin-bottom: 8px;
+      }
+      [class*="span"] {
+        background: #bbb;
+        line-height: 30px;
+        text-align: center;
+      }
+      p {
+        padding: 2px;
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span16">
+          <p>16</p>
+          <div class="row">
+            <div class="span8">
+              <p>8</p>
+            </div>
+            <div class="span8">
+              <p>8</p>
+              <div class="row">
+                <div class="span4">
+                  <p>4</p>
+                </div>
+                <div class="span4">
+                  <div class="row">
+                    <p>4</p>
+                    <div class="span2">
+                      <p>2</p>
+                    </div>
+                    <div class="span2">
+                      <p>2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

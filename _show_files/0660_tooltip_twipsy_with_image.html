@@ -1,0 +1,88 @@
+<!-- ツールチップに画像を出すには？ -->
+<!-- html:true にしてtitle属性に埋め込む -->
+<!-- .muted を指定すると色が薄くなる -->
+<!-- rel="twipsy" は必須ではない -->
+<!doctype html>
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-twipsy.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("a[rel=twipsy]").twipsy({
+          animate: true            // フェイドイン・アウトするか？
+        , delayIn: 150             // 表示までのディレイ
+        , delayOut: 500            // 消去までのディレイ
+        , fallback: '代替テキスト' // title属性がない場合の代替テキスト
+        , placement: 'below'       // 表示場所(above:上 below:下 left:左 right:右)
+        , html: true               // HTMLを有効にするか？
+        , live: false              // あとから追加された要素にも適用するか？
+        , offset: 0                // 要素からどれだけ離すか
+        , title: 'title'           // テキストを取得する属性
+        , trigger: 'hover'         // 表示するタイミング
+        });
+      });
+    </script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+66 / 83
+    <a href="0650_tooltip_twipsy_basic.html" class="prev">戻る</a>
+    <a href="0670_popover_basic.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">66. ツールチップに画像を出すには？</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <p class="muted" style="margin-top:64px">
+        <a href="#" rel="twipsy">カレー</a>ライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライス<a href="#" rel="twipsy" title="<img src='assets/0001.jpg' width=128 />">カレー</a>というものもあるが、前者が皿の左側に<a href="#" rel="twipsy" title="あいうえお">カレー</a>を盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側に<a href="#" rel="twipsy" title="あいうえお">カレー</a>を盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。</p>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;p class=&quot;muted&quot; style=&quot;margin-top:64px&quot;&gt;
+    &lt;a href=&quot;#&quot; rel=&quot;twipsy&quot;&gt;カレー&lt;/a&gt;ライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライス&lt;a href=&quot;#&quot; rel=&quot;twipsy&quot; title=&quot;&lt;img src='assets/0001.jpg' width=128 /&gt;&quot;&gt;カレー&lt;/a&gt;というものもあるが、前者が皿の左側に&lt;a href=&quot;#&quot; rel=&quot;twipsy&quot; title=&quot;あいうえお&quot;&gt;カレー&lt;/a&gt;を盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側に&lt;a href=&quot;#&quot; rel=&quot;twipsy&quot; title=&quot;あいうえお&quot;&gt;カレー&lt;/a&gt;を盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。&lt;/p&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">JavaScript</h2>
+  <pre class="prettyprint linenums">$(&quot;a[rel=twipsy]&quot;).twipsy({
+  animate: true            // フェイドイン・アウトするか？
+, delayIn: 150             // 表示までのディレイ
+, delayOut: 500            // 消去までのディレイ
+, fallback: '代替テキスト' // title属性がない場合の代替テキスト
+, placement: 'below'       // 表示場所(above:上 below:下 left:左 right:右)
+, html: true               // HTMLを有効にするか？
+, live: false              // あとから追加された要素にも適用するか？
+, offset: 0                // 要素からどれだけ離すか
+, title: 'title'           // テキストを取得する属性
+, trigger: 'hover'         // 表示するタイミング
+});
+</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">MEMO</h2>
+  <pre class="__hs__">html:true にしてtitle属性に埋め込む
+.muted を指定すると色が薄くなる
+rel=&quot;twipsy&quot; は必須ではない</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+66 / 83
+    <a href="0650_tooltip_twipsy_basic.html" class="prev">戻る</a>
+    <a href="0670_popover_basic.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>

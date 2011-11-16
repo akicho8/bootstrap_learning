@@ -1,0 +1,63 @@
+<!-- テーブル - 色づけ -->
+<!-- th や td に色を指定できる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("table").tablesorter();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <table class="zebra-striped span10">
+        <thead>
+          <tr>
+            <th class="">していなし</th>
+            <th class="blue">あお</th>
+            <th class="green">みどり</th>
+            <th class="red">あか</th>
+            <th class="yellow">きいろ</th>
+            <th class="orange">おれんじ</th>
+            <th class="purple">むらさき</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="blue">あお</td>
+            <td class="green">みどり</td>
+            <td class="red">あか</td>
+            <td class="yellow">きいろ</td>
+            <td class="orange">おれんじ</td>
+            <td class="purple">むらさき</td>
+            <td class="">していなし</td>
+          </tr>
+          <tr>
+            <td class="green">みどり</td>
+            <td class="red">あか</td>
+            <td class="yellow">きいろ</td>
+            <td class="orange">おれんじ</td>
+            <td class="purple">むらさき</td>
+            <td class="">していなし</td>
+            <td class="blue">あお</td>
+          </tr>
+          <tr>
+            <td class="red">あか</td>
+            <td class="yellow">きいろ</td>
+            <td class="orange">おれんじ</td>
+            <td class="purple">むらさき</td>
+            <td class="">していなし</td>
+            <td class="blue">あお</td>
+            <td class="green">みどり</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

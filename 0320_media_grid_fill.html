@@ -1,0 +1,48 @@
+<!-- 画像や動画を綺麗にたくさん並べる -->
+<!-- span2=90px span4=210px span6=330px にすると幅がぴったり合う -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .span4 {
+      background: #ccc;
+      min-height: 512px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h3>span12の領域</h3>
+          <h4>span12 には span6 相当の横330pxが2つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/0001.jpg" width="330" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="330" /></a></li>
+          </ul>
+          <h4>span12 には span4 相当の横210pxが3つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
+          </ul>
+          <h4>span12 には span2 相当の横90pxが6つ収まる</h4>
+          <ul class="media-grid">
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+            <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
+          </ul>
+        </div>
+        <div class="span4">
+          <h4>span4の領域</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

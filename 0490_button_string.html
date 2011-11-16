@@ -1,0 +1,26 @@
+<!-- ボタン - 任意のラベルに切り替える美しい仕組み -->
+<!-- data-なんとか-text の部分がキーになって button("なんとか") でラベルが切り替わる -->
+<!-- reset だと元のラベルに戻る -->
+<!-- reset と toggle は予約語 -->
+<!-- テキストを元のタグで一元管理できるところが利点 -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-buttons.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a id="main" class="btn large" data-x-text="作成" data-y-text="更新" data-z-text="削除" href="#">送信</a>
+      <div class="actions">
+        <a href="#" class="btn" onClick='$("#main").button("x")'>a</a>
+        <a href="#" class="btn" onClick='$("#main").button("y")'>b</a>
+        <a href="#" class="btn" onClick='$("#main").button("z")'>c</a>
+        <a href="#" class="btn" onClick='$("#main").button("reset")'>元に戻す</a>
+      </div>
+    </div>
+  </body>
+</html>
