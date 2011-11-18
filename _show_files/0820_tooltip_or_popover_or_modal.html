@@ -1,0 +1,109 @@
+<!-- ツールチップ・ポップオーバー・ダイアログを使い分ける -->
+<!doctype html>
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-twipsy.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("a[rel=twipsy]").twipsy({html:true})
+        $("a[rel=popover]").popover()
+        $(".modal-close").click(function(){$('.modal').modal('hide')})
+      });
+    </script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+82 / 89
+    <a href="0810_modal_popup_dialog_close_button.html" class="prev">戻る</a>
+    <a href="0830_message_success.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">82. ツールチップ・ポップオーバー・ダイアログを使い分ける</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <div style="margin-top:160px"></div>
+
+      <a href="#" rel="twipsy" title="カレーライスのこと">カレー</a>
+
+      <a href="#" rel="popover" title="カレーライス" data-content="玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。">カレー</a>
+
+      <a data-controls-modal="main" data-backdrop="false" data-keyboard="true" href="#">カレー</a>
+
+      <div class="modal hide" id="main">
+        <div class="modal-header">
+          <a href="#" class="close">&times;</a>
+          <h3>カレーライス</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/0001.jpg" width="30%" class="pull-left" style="margin-right:8px" />
+          <div style="overflow: hidden">
+            <p>カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。 飲み物などと僭称するピザも確認されている。トイレで食してはならない禁忌の食べ物である。</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn primary modal-close">役に立った</a>
+          <a href="#" class="btn modal-close">役に立たなかった</a>
+          <a href="#" class="btn modal-close">編集</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;div style=&quot;margin-top:160px&quot;&gt;&lt;/div&gt;
+
+  &lt;a href=&quot;#&quot; rel=&quot;twipsy&quot; title=&quot;カレーライスのこと&quot;&gt;カレー&lt;/a&gt;
+
+  &lt;a href=&quot;#&quot; rel=&quot;popover&quot; title=&quot;カレーライス&quot; data-content=&quot;玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。&quot;&gt;カレー&lt;/a&gt;
+
+  &lt;a data-controls-modal=&quot;main&quot; data-backdrop=&quot;false&quot; data-keyboard=&quot;true&quot; href=&quot;#&quot;&gt;カレー&lt;/a&gt;
+
+  &lt;div class=&quot;modal hide&quot; id=&quot;main&quot;&gt;
+    &lt;div class=&quot;modal-header&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+      &lt;h3&gt;カレーライス&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-body&quot;&gt;
+      &lt;img src=&quot;assets/0001.jpg&quot; width=&quot;30%&quot; class=&quot;pull-left&quot; style=&quot;margin-right:8px&quot; /&gt;
+      &lt;div style=&quot;overflow: hidden&quot;&gt;
+        &lt;p&gt;カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。 飲み物などと僭称するピザも確認されている。トイレで食してはならない禁忌の食べ物である。&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-footer&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn primary modal-close&quot;&gt;役に立った&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn modal-close&quot;&gt;役に立たなかった&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn modal-close&quot;&gt;編集&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">JavaScript</h2>
+  <pre class="prettyprint linenums">$(&quot;a[rel=twipsy]&quot;).twipsy({html:true})
+$(&quot;a[rel=popover]&quot;).popover()
+$(&quot;.modal-close&quot;).click(function(){$('.modal').modal('hide')})
+</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+82 / 89
+    <a href="0810_modal_popup_dialog_close_button.html" class="prev">戻る</a>
+    <a href="0830_message_success.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>
