@@ -1,0 +1,119 @@
+<!-- 複数行用 + 閉じるボタン + ボタングループ (x4色) -->
+<!-- 閉じる機能をつける場合は bootstrap-alerts.js が必要 -->
+<!-- data-alert 属性があれば自動的に $.alert が反応する -->
+<!-- block-message クラスをつけると複数行用の淡い色になる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap-alerts.js" type="text/javascript"></script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+68 / 89
+    <a href="0760_alert_message_color.html" class="prev">戻る</a>
+    <a href="0780_tooltip_twipsy_basic.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">68. 複数行用 + 閉じるボタン + ボタングループ (x4色)</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <div class="alert-message block-message info" data-alert="alert">
+        <a class="close">&times;</a>
+        <p><strong>Info: </strong>メッセージが1件届いています</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message success" data-alert="alert">
+        <a class="close">&times;</a>
+        <p><strong>Success: </strong>メッセージが届いています</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message warning" data-alert="alert">
+        <a class="close">&times;</a>
+        <p><strong>Warning: </strong>ニックネームを入力してください</p>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+      <div class="alert-message block-message error" data-alert="alert">
+        <a class="close">&times;</a>
+        <p><strong>Error: </strong>エラーが発生しました</p>
+        <ul>
+          <li>あれを入力してください</li>
+          <li>これも入力してください</li>
+          <li>それも入力してください</li>
+        </ul>
+        <div class="alert-action">
+          <a href="#" class="btn small">送信</a> <a href="#" class="btn small">キャンセル</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;alert-message block-message info&quot; data-alert=&quot;alert&quot;&gt;
+    &lt;a class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+    &lt;p&gt;&lt;strong&gt;Info: &lt;/strong&gt;メッセージが1件届いています&lt;/p&gt;
+    &lt;div class=&quot;alert-action&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;送信&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;キャンセル&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;alert-message block-message success&quot; data-alert=&quot;alert&quot;&gt;
+    &lt;a class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+    &lt;p&gt;&lt;strong&gt;Success: &lt;/strong&gt;メッセージが届いています&lt;/p&gt;
+    &lt;div class=&quot;alert-action&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;送信&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;キャンセル&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;alert-message block-message warning&quot; data-alert=&quot;alert&quot;&gt;
+    &lt;a class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+    &lt;p&gt;&lt;strong&gt;Warning: &lt;/strong&gt;ニックネームを入力してください&lt;/p&gt;
+    &lt;div class=&quot;alert-action&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;送信&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;キャンセル&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;alert-message block-message error&quot; data-alert=&quot;alert&quot;&gt;
+    &lt;a class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+    &lt;p&gt;&lt;strong&gt;Error: &lt;/strong&gt;エラーが発生しました&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;あれを入力してください&lt;/li&gt;
+      &lt;li&gt;これも入力してください&lt;/li&gt;
+      &lt;li&gt;それも入力してください&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;alert-action&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;送信&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn small&quot;&gt;キャンセル&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">MEMO</h2>
+  <pre class="__hs__">閉じる機能をつける場合は bootstrap-alerts.js が必要
+data-alert 属性があれば自動的に $.alert が反応する
+block-message クラスをつけると複数行用の淡い色になる</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+68 / 89
+    <a href="0760_alert_message_color.html" class="prev">戻る</a>
+    <a href="0780_tooltip_twipsy_basic.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>

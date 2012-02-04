@@ -1,0 +1,92 @@
+<!-- クリックするだけで全選択するには？ -->
+<!-- $(".copy-code") にフォーカスされたら $(this).select() する -->
+<!-- Firefoxだとそれだけで動くが、Chrome だと setTimeout が必要になる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".copy-code").focus(function () {
+          // Firefox だとこれだけで選択可能
+          // $(this).select();
+
+          // Chromeにも対応するなら setTimeout が必要になる
+          var el = this;
+          setTimeout(function () { $(el).select(); }, 0);
+        });
+      });
+    </script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+86 / 89
+    <a href="0940_header_subhead.html" class="prev">戻る</a>
+    <a href="0960_prettify_light_theme.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">86. クリックするだけで全選択するには？</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <form class="form-stacked">
+        <div class="clearfix">
+          <label>生成コード</label>
+          <div class="input">
+            <textarea class="copy-code large" rows="4" style="overflow: hidden"><script type="text/javascript" src="http://ext.nicovideo.jp/thumb_watch/sm13401"></script><noscript><a href="http://www.nicovideo.jp/watch/sm13401">【ニコニコ動画】(ｽｰﾊﾟｰﾌﾟﾚｲ)(ﾖｰﾖｰ)worodl yo-yo- contest 2005 2A 1st - Shinji Saito</a></noscript></textarea>
+            <span class="help-block">クリックして CTRL + c でコピーしてください</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;form class=&quot;form-stacked&quot;&gt;
+    &lt;div class=&quot;clearfix&quot;&gt;
+      &lt;label&gt;生成コード&lt;/label&gt;
+      &lt;div class=&quot;input&quot;&gt;
+        &lt;textarea class=&quot;copy-code large&quot; rows=&quot;4&quot; style=&quot;overflow: hidden&quot;&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://ext.nicovideo.jp/thumb_watch/sm13401&quot;&gt;&lt;/script&gt;&lt;noscript&gt;&lt;a href=&quot;http://www.nicovideo.jp/watch/sm13401&quot;&gt;【ニコニコ動画】(ｽｰﾊﾟｰﾌﾟﾚｲ)(ﾖｰﾖｰ)worodl yo-yo- contest 2005 2A 1st - Shinji Saito&lt;/a&gt;&lt;/noscript&gt;&lt;/textarea&gt;
+        &lt;span class=&quot;help-block&quot;&gt;クリックして CTRL + c でコピーしてください&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">JavaScript</h2>
+  <pre class="prettyprint linenums">$(&quot;.copy-code&quot;).focus(function () {
+  // Firefox だとこれだけで選択可能
+  // $(this).select();
+
+  // Chromeにも対応するなら setTimeout が必要になる
+  var el = this;
+  setTimeout(function () { $(el).select(); }, 0);
+});
+</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">MEMO</h2>
+  <pre class="__hs__">$(&quot;.copy-code&quot;) にフォーカスされたら $(this).select() する
+Firefoxだとそれだけで動くが、Chrome だと setTimeout が必要になる</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+86 / 89
+    <a href="0940_header_subhead.html" class="prev">戻る</a>
+    <a href="0960_prettify_light_theme.html" class="next">もっと見る</a>
+</div>
+</body>
+
+</html>
