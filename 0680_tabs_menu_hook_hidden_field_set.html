@@ -1,5 +1,5 @@
 <!-- タブが変更されたときの検知方法 -->
-<!-- フックはとくに用意されていない。jQueryの元の機能を使う -->
+<!-- changeフックから前(relatedTarget)と後(target)が取得できる -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -13,6 +13,8 @@
       $(function(){
         $(".tabs a").change(function(e){
           $(".container").append($(e.relatedTarget).attr("href") + " → " + $(e.target).attr("href") + "<br/>")
+          // Hiddenタグなどに現在のタブIDを埋め込む例
+          $("#current_tab").val($(e.target).attr("href").replace("#", ""));
         });
       });
     </script>
@@ -20,10 +22,11 @@
   <body>
     <div class="container">
       <ul class="tabs" data-tabs="tabs">
-        <li class="active"><a href="#t1">t1</a></li>
-        <li><a href="#t2">t2</a></li>
+        <li class="active"><a href="#t1">(t1)</a></li>
+        <li><a href="#t2">(t2)</a></li>
       </ul>
       <div class="tab-content">
+        <input type="text" id="current_tab" />
         <div class="active" id="t1">c1</div>
         <div id="t2">c2</div>
       </div>
