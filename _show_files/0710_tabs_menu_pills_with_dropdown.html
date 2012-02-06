@@ -1,4 +1,4 @@
-<!-- タブ(円形) -->
+<!-- 円形タブ + ドロップダウンはデザインが合わないので注意 -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -19,23 +19,30 @@
   <body>
 <div class="__hs_paginate">
 <a href="index.html" class="index">■</a>
-61 / 89
-    <a href="0690_tabs_ajax.html" class="prev">戻る</a>
-    <a href="0710_tabs_pills_with_dropdown.html" class="next">もっと見る</a>
+62 / 89
+    <a href="0700_tabs_menu_pills.html" class="prev">戻る</a>
+    <a href="0720_breadcrumbs.html" class="next">もっと見る</a>
 </div>
-    <h1 class="__hs__">61. タブ(円形)</h1>
+    <h1 class="__hs__">62. 円形タブ + ドロップダウンはデザインが合わないので注意</h1>
 <div class="__hs_container __hs_clearfix">
 
     <div class="container">
       <ul class="pills" data-pills="pills">
         <li class="active"><a href="#home">ホーム</a></li>
         <li><a href="#profile">プロフィール</a></li>
-        <li><a href="#settings">設定</a></li>
+        <li class="dropdown" data-dropdown="dropdown">
+          <a href="#" class="dropdown-toggle">設定</a>
+          <ul class="dropdown-menu">
+            <li><a href="#avatar">アバター</a></li>
+            <li><a href="#api">API</a></li>
+          </ul>
+        </li>
       </ul>
       <div class="tab-content">
         <div class="active" id="home">A</div>
         <div id="profile">B</div>
-        <div id="settings">C</div>
+        <div id="avatar">C</div>
+        <div id="api">D</div>
       </div>
     </div>
   </div>
@@ -45,20 +52,27 @@
   &lt;ul class=&quot;pills&quot; data-pills=&quot;pills&quot;&gt;
     &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot;&gt;ホーム&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#profile&quot;&gt;プロフィール&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#settings&quot;&gt;設定&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot; data-dropdown=&quot;dropdown&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot;&gt;設定&lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#avatar&quot;&gt;アバター&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
   &lt;/ul&gt;
   &lt;div class=&quot;tab-content&quot;&gt;
     &lt;div class=&quot;active&quot; id=&quot;home&quot;&gt;A&lt;/div&gt;
     &lt;div id=&quot;profile&quot;&gt;B&lt;/div&gt;
-    &lt;div id=&quot;settings&quot;&gt;C&lt;/div&gt;
+    &lt;div id=&quot;avatar&quot;&gt;C&lt;/div&gt;
+    &lt;div id=&quot;api&quot;&gt;D&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 </section>
 <div class="__hs_paginate">
 <a href="index.html" class="index">■</a>
-61 / 89
-    <a href="0690_tabs_ajax.html" class="prev">戻る</a>
-    <a href="0710_tabs_pills_with_dropdown.html" class="next">もっと見る</a>
+62 / 89
+    <a href="0700_tabs_menu_pills.html" class="prev">戻る</a>
+    <a href="0720_breadcrumbs.html" class="next">もっと見る</a>
 </div>
 </body>
 

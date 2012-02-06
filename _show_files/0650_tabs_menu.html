@@ -1,4 +1,9 @@
-<!-- タブ - 横幅が足りないのでドロップダウンにする例 -->
+<!-- タブ -->
+<!-- 1. タブのリンクは href="#foo" のようにアンカーのみにしないといけない(そうしないと対応するコンテンツに切り替わらない) -->
+<!--    hrefの値はそのままセレクタとして使われる。$("#foo") のように。 -->
+<!-- 2. foo に対応するコンテンツに id="foo" を指定すること
+<!-- 3. 最初から開いておく場合は、タブの方に li.active をつけておくこと(a.activeではないので注意) -->
+<!-- 4. 対応するコンテンツにも .active をつけておくこと -->
 <!DOCTYPE html>
 <html lang="ja">
 <html>
@@ -19,30 +24,23 @@
   <body>
 <div class="__hs_paginate">
 <a href="index.html" class="index">■</a>
-57 / 89
-    <a href="0650_tabs.html" class="prev">戻る</a>
-    <a href="0670_tabs_with_static_link.html" class="next">もっと見る</a>
+56 / 89
+    <a href="0640_note.html" class="prev">戻る</a>
+    <a href="0660_tabs_menu_with_dropdown.html" class="next">もっと見る</a>
 </div>
-    <h1 class="__hs__">57. タブ - 横幅が足りないのでドロップダウンにする例</h1>
+    <h1 class="__hs__">56. タブ</h1>
 <div class="__hs_container __hs_clearfix">
 
     <div class="container">
       <ul class="tabs" data-tabs="tabs">
         <li class="active"><a href="#home">ホーム</a></li>
         <li><a href="#profile">プロフィール</a></li>
-        <li class="dropdown" data-dropdown="dropdown">
-          <a href="#" class="dropdown-toggle">設定</a>
-          <ul class="dropdown-menu">
-            <li><a href="#avatar">アバター</a></li>
-            <li><a href="#api">API</a></li>
-          </ul>
-        </li>
+        <li><a href="#settings">設定</a></li>
       </ul>
       <div class="tab-content">
         <div class="active" id="home">A</div>
         <div id="profile">B</div>
-        <div id="avatar">C</div>
-        <div id="api">D</div>
+        <div id="settings">C</div>
       </div>
     </div>
   </div>
@@ -52,27 +50,27 @@
   &lt;ul class=&quot;tabs&quot; data-tabs=&quot;tabs&quot;&gt;
     &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot;&gt;ホーム&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;#profile&quot;&gt;プロフィール&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;dropdown&quot; data-dropdown=&quot;dropdown&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot;&gt;設定&lt;/a&gt;
-      &lt;ul class=&quot;dropdown-menu&quot;&gt;
-        &lt;li&gt;&lt;a href=&quot;#avatar&quot;&gt;アバター&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#api&quot;&gt;API&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#settings&quot;&gt;設定&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div class=&quot;tab-content&quot;&gt;
     &lt;div class=&quot;active&quot; id=&quot;home&quot;&gt;A&lt;/div&gt;
     &lt;div id=&quot;profile&quot;&gt;B&lt;/div&gt;
-    &lt;div id=&quot;avatar&quot;&gt;C&lt;/div&gt;
-    &lt;div id=&quot;api&quot;&gt;D&lt;/div&gt;
+    &lt;div id=&quot;settings&quot;&gt;C&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
 </section>
+<section class="__hs__">
+  <h2 class="__hs__">MEMO</h2>
+  <pre class="__hs__">1. タブのリンクは href=&quot;#foo&quot; のようにアンカーのみにしないといけない(そうしないと対応するコンテンツに切り替わらない)
+   hrefの値はそのままセレクタとして使われる。$(&quot;#foo&quot;) のように。
+3. 最初から開いておく場合は、タブの方に li.active をつけておくこと(a.activeではないので注意)
+4. 対応するコンテンツにも .active をつけておくこと</pre>
+</section>
 <div class="__hs_paginate">
 <a href="index.html" class="index">■</a>
-57 / 89
-    <a href="0650_tabs.html" class="prev">戻る</a>
-    <a href="0670_tabs_with_static_link.html" class="next">もっと見る</a>
+56 / 89
+    <a href="0640_note.html" class="prev">戻る</a>
+    <a href="0660_tabs_menu_with_dropdown.html" class="next">もっと見る</a>
 </div>
 </body>
 
