@@ -7,13 +7,11 @@
     <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="assets/demo.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="assets/jquery.js" type="text/javascript"></script>
-    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
-    <script src="assets/bootstrap-dropdown.js" type="text/javascript"></script>
-    <script src="assets/bootstrap-scrollspy.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="topbar" data-dropdown="dropdown" data-scrollspy="scrollspy">
-      <div class="topbar-inner">
+    <div class="navbar" data-dropdown="dropdown" data-scrollspy="scrollspy">
+      <div class="navbar-inner">
         <div class="container">
           <h3><a href="#">なんとか商店</a></h3>
           <ul class="nav">
@@ -32,8 +30,8 @@
             </li>
           </ul>
           <form class="pull-right">
-            <input type="text" class="small" placeholder="ユーザー名" />
-            <input type="password" class="small" placeholder="パスワード" />
+            <input type="text" class="input-small" placeholder="ユーザー名" />
+            <input type="password" class="input-small" placeholder="パスワード" />
             <button type="submit" class="btn">ログイン</button>
           </form>
         </div>
@@ -45,7 +43,7 @@
         <div class="hero-unit">
           <h1>なんとか商店</h1>
           <p>カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。</p>
-          <p><a class="btn primary large">もっと読む &raquo;</a></p>
+          <p><a class="btn btn-primary large">もっと読む &raquo;</a></p>
         </div>
 
         <div class="row">
@@ -59,7 +57,7 @@
             <h2>営業時間</h2>
             <p>ご予約TEL 090-123-4567</p>
             <p>ファミコンに関するご相談も受けたまわっております。気軽にご相談ください。</p>
-            <table class="zebra-striped">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>営業時間</th>
@@ -98,7 +96,7 @@
         <div class="row">
           <div class="span5">
             <h2>通常診療</h2>
-            <table class="zebra-striped">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>ケース</th>
@@ -110,12 +108,12 @@
                 <tr><td>次回</td><td>2,000 〜 2,300 円</td></tr>
               </tbody>
             </table>
-            <p><strong>その他:</strong> テーピング、湿布などの材料費 ￥200〜</p>
+            <p><strong>その他:</strong> テーピング、湿布などの材料費 ¥200〜</p>
           </div>
 
           <div class="span5">
             <h2>保険診療</h2>
-            <table class="zebra-striped">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>ケース</th>
@@ -132,7 +130,7 @@
           <div class="span6">
             <h2>ダイエット</h2>
 
-            <table class="zebra-striped">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>コース</th>
@@ -199,7 +197,7 @@
         <div class="row">
           <div class="span12">
             <h3>施術の様子</h3>
-            <ul class="media-grid">
+            <ul class="thumbnails">
               <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
               <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
               <li><a href="#"><img src="assets/0001.jpg" width="90" /></a></li>
@@ -219,7 +217,7 @@
             <p>健康に関するご相談も受けたまわっております。気軽にご相談ください。</p>
           </div>
           <div class="span12">
-            <table class="zebra-striped">
+            <table class="table table-striped">
               <thead>
                 <tr>
                   <th>営業時間</th>
@@ -248,7 +246,7 @@
         </div>
         <div class="row">
           <div class="span16">
-            <ul class="media-grid">
+            <ul class="thumbnails">
               <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
               <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
               <li><a href="#"><img src="assets/0001.jpg" width="210" /></a></li>
@@ -273,27 +271,27 @@
         </div>
         <div class="row">
           <div class="span16">
-            <form>
-              <div class="clearfix">
-                <label>種類</label>
-                <div class="input">
+            <form class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label">種類</label>
+                <div class="controls">
                   <ul class="inputs-list">
-                    <li><label><input type="radio" name="group1" /> <span>ご予約</span></label></li>
-                    <li><label><input type="radio" name="group1" /> <span>料金についての相談</span></label></li>
-                    <li><label><input type="radio" name="group1" /> <span>その他</span></label></li>
+                    <li><label class="control-label"><input type="radio" name="group1" /> <span>ご予約</span></label></li>
+                    <li><label class="control-label"><input type="radio" name="group1" /> <span>料金についての相談</span></label></li>
+                    <li><label class="control-label"><input type="radio" name="group1" /> <span>その他</span></label></li>
                   </ul>
                 </div>
               </div>
-              <div class="clearfix">
-                <label>内容</label>
-                <div class="input">
-                  <textarea rows="8" class="xxlarge" placeholder="内容をかくところ"></textarea>
+              <div class="control-group">
+                <label class="control-label">内容</label>
+                <div class="controls">
+                  <textarea rows="8" class="input-xxlarge" placeholder="内容をかくところ"></textarea>
                   <!-- <span class="help-inline">10文字以内で入力してください</span> -->
                 </div>
               </div>
               <div class="actions">
                 <!-- <input type="submit" class="btn" value="キャンセル" /> -->
-                <input type="submit" class="btn primary" value="送信" />
+                <input type="submit" class="btn btn-primary" value="送信" />
               </div>
             </form>
           </div>

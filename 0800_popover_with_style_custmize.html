@@ -1,0 +1,33 @@
+<!-- ポップオーバーのカスタマイズ -->
+<!-- .popover .inner で大きさを変更できる -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      .popover .inner {
+        width: 640px;
+      }
+    </style>
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("a[rel=popover]").popover({
+          placement: "right",
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="margin-top:320px"></div>
+      <p class="muted" style="margin-top:64px">
+        <a href="#" rel="popover" title="画像の例" data-content="<img src='assets/0001.jpg' width='100%' />画像の場合はwidth='100%'を指定すると左右のマージンが同じになる">画像</a><br/>
+        <a href="#" rel="popover" title="カレーライス" data-content="カレーライスとは、玄奘三蔵（三蔵法師）が当時のインドである天竺から持ち帰った、大変ありがたい食べ物（料理）である。なお、ライスカレーというものもあるが、前者が皿の左側にカレーを盛り、右側にライスを盛ったものであるのに対し、後者は皿の左側にライスを盛り、右側にカレーを盛ると言うもので、いずれも食べるときに混ぜるという行為をエンジョイできる「わくわくフーズ」である。">カレー</a><br/>
+        <a href="#" rel="popover" title="iframeの例" data-content="<iframe src='http://www.nicovideo.jp/' frameborder='0' width='100%' scrolling='no'></iframe>これも横幅をwidth='100%'にしておくとマージンがきまる">iframe</a><br/>
+      </p>
+    </div>
+  </body>
+</html>

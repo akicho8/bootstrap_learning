@@ -1,0 +1,44 @@
+<!-- 入力フィールドの前にフィールドの一部っぽいテキストをくっつけるには？ -->
+<!-- div.input input-prepend span.add-on input で前 -->
+<!-- 前後につけることはできない -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">その1</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <span class="add-on">http://</span>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">その2</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <label class="add-on"><input type="checkbox" /></label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">その3</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <label class="add-on active"><input type="checkbox" checked="checked" /></label>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

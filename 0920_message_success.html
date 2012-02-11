@@ -6,8 +6,7 @@
     <meta charset="UTF-8" />
     <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="assets/jquery.js" type="text/javascript"></script>
-    <script src="assets/bootstrap-alerts.js" type="text/javascript"></script>
-    <script src="assets/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="container">
@@ -23,34 +22,34 @@
 
       <hr/>
 
-      <div class="alert-message success" data-alert="alert">
-        <a class="close">&times;</a>
+      <div class="alert-message success">
+        <a data-dismiss="alert" class="close">&times;</a>
         <p>メッセージが届いています</p>
       </div>
 
       <hr/>
 
-      <div class="alert-message block-message success" data-alert="alert">
-        <a class="close">&times;</a>
+      <div class="alert alert-block success">
+        <a data-dismiss="alert" class="close">&times;</a>
         <p>メッセージが届いています</p>
         <div class="alert-action">
-          <a href="#" class="btn small">ほっとく</a>
-          <a href="#" class="btn small">読む</a>
+          <a href="#" class="btn btn-small">ほっとく</a>
+          <a href="#" class="btn btn-small">読む</a>
         </div>
       </div>
 
-      <a data-controls-modal="main" data-backdrop="true" data-keyboard="true" href="#">押すなよ</a>
+      <a data-toggle="modal" href="#main">押すなよ</a>
 
       <div class="modal hide" id="main">
         <div class="modal-header">
-          <a href="#" class="close">&times;</a>
+          <a data-dismiss="modal" class="close">&times;</a>
           <h3>通知</h3>
         </div>
         <div class="modal-body">
           <p>メッセージが届いています</p>
         </div>
         <div class="modal-footer">
-          <a href="#" class="btn primary">読む</a>
+          <a href="#" class="btn btn-primary">読む</a>
           <a href="#" class="btn">ほっとく</a>
         </div>
       </div>

@@ -1,0 +1,45 @@
+<!-- 画像や動画を並べる -->
+<!-- ul.thumbnails li.span* a.thumbnail img 普通の使い方 -->
+<!-- ul.thumbnails li.span* div.thumbnail   リンクを貼らない場合。中には img div.caption を並る -->
+<!-- .thumbnails に対して枠がつく -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <h2>自動改行</h2>
+          <p>span6の領域にspan3を4つ入れると途中改行してくれる</p>
+          <ul class="thumbnails">
+            <li class="span3"><a href="#" class="thumbnail"><img src="assets/0001.jpg" alt=""></a></li>
+            <li class="span3"><a href="#" class="thumbnail"><img src="assets/0001.jpg" alt=""></a></li>
+            <li class="span3"><a href="#" class="thumbnail"><img src="assets/0001.jpg" alt=""></a></li>
+            <li class="span3"><a href="#" class="thumbnail"><img src="assets/0001.jpg" alt=""></a></li>
+          </ul>
+        </div>
+
+        <div class="span6">
+          <h2>リンクを貼らない方法</h2>
+          <p>div.thumbnail を使う。その中にさらに文章を入れるときは div.caption を使う</p>
+          <ul class="thumbnails">
+            <li class="span3">
+              <div class="thumbnail">
+                <img src="assets/0001.jpg" />
+                <div class="caption">
+                  <h5>ラベル</h5>
+                  <p>時に僕たちは当てのないさすらいみたいな遠出がしたくなる。きっとそれは旅行ではなく旅といえばいいのだろう。もちろん偶然隣に座った女の子と友達になったりして、一緒に観光地をまわったり、名物を食べたり。そんな淡い下心もあって、とにかく僕はこの夏、「旅」とやらにでることにした。北海道から九州までの日本縦断。様々な期待に胸を膨らませ、僕は今1人発車のベルを待つ。そんなギャルゲー。</p>
+                  <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

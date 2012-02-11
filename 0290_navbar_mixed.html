@@ -1,0 +1,41 @@
+<!-- ツールバー全部入り？ -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="#" class="brand">サイト名</a>
+          <ul class="nav">
+            <li><a href="#">登録</a></li>
+            <li class="active"><a href="#">一覧</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">その他 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">ニコニコ動画</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="form-search navbar-form pull-right">
+            <input type="text" class="input-small" placeholder="ユーザー名" />
+            <input type="password" class="input-small" placeholder="パスワード" />
+            <!-- <button type="submit" class="btn">こっちだと少し大きい</button> -->
+            <input type="submit" class="btn" value="ログイン" />
+          </form>
+          <form class="navbar-search pull-left">
+            <input type="search" class="search-query" placeholder="検索" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

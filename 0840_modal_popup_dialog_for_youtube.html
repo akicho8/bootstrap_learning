@@ -1,0 +1,30 @@
+<!-- ポップアップの中でiframeを表示する例 -->
+<!-- Youtubeは横480じゃないとはみ出てしまう -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a class="btn" data-toggle="modal" href="#main">Youtube</a>
+      <div class="modal hide fade" id="main">
+        <div class="modal-header">
+          <a data-dismiss="modal" class="close">&times;</a>
+          <h3>栗原舞のヨーヨー 静岡大道芸ワールドカップ2010</h3>
+        </div>
+        <div class="modal-body">
+          <iframe width="480" height="390" src="http://www.youtube.com/embed/TecVgDJO4cM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary">もっと見る</a>
+          <a href="#" class="btn" data-dismiss="modal">閉じる</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

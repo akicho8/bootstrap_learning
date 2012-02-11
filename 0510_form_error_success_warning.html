@@ -1,0 +1,50 @@
+<!-- フォームで入力要素を目立たせるには？ -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">題名</label>
+          <div class="controls">
+            <input type="text" placeholder="" />
+            <span class="help-inline">10文字以内で入力してください</span>
+            <p class="help-block">20文字以内で入力してください</p>
+          </div>
+        </div>
+
+        <div class="control-group error">
+          <label class="control-label">題名</label>
+          <div class="controls">
+            <input type="text" placeholder="error" />
+            <span class="help-inline">10文字以内で入力してください</span>
+            <p class="help-block">20文字以内で入力してください</p>
+          </div>
+        </div>
+
+        <div class="control-group warning">
+          <label class="control-label">題名</label>
+          <div class="controls">
+            <input type="text" placeholder="warning" />
+            <span class="help-inline">10文字以内で入力してください</span>
+            <p class="help-block">20文字以内で入力してください</p>
+          </div>
+        </div>
+
+        <div class="control-group success">
+          <label class="control-label">題名</label>
+          <div class="controls">
+            <input type="text" placeholder="success" />
+            <span class="help-inline">10文字以内で入力してください</span>
+            <p class="help-block">20文字以内で入力してください</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

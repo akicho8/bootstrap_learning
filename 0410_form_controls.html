@@ -1,0 +1,43 @@
+<!-- フォームの基本 -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-horizontal"> <!-- form-vertical にするだけで縦並びになる -->
+        <fieldset>
+          <legend>ちょっと違和感あるけどlegendにフォームのタイトルを書く(下が開きすぎて変じゃないか？)</legend>
+          <div class="control-group">
+            <label class="control-label" for="input1">題名</label>
+            <div class="controls">
+              <input type="text" id="input1" class="input-xlarge" /><span class="help-inline">横に表示</span>
+              <p class="help-block">下に表示</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea1">本文</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="cb1">確認</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="cb1" value="1" />label.checkbox input にしないとずれるので注意
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <input type="submit" class="btn" value="保存" />
+            <input type="submit" class="btn btn-primary" value="送信" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
