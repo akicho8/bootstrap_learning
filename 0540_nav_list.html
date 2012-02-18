@@ -1,0 +1,38 @@
+<!-- 使いやすいそうなナビゲーションリスト -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+    <style type="text/css">
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <script type="text/coffeescript">
+      $ ->
+        # アクティブな行のアイコンを反転して見やすくする
+        $(".nav-list .active i").addClass("icon-white")
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">ヘッダー1</li>
+          <li class="active" ><a href="#"><i class="icon-home"></i> ホーム</a></li>
+          <li                ><a href="#"><i class="icon-book"></i> ライブラリ</a></li>
+          <li                ><a href="#"><i class="icon-pencil"></i> アプリケーション</a></li>
+          <li                ><a href="#"><i class="icon-"></i> その他</a></li>
+          <li class="nav-header">ヘッダー2</li>
+          <li class="active" ><a href="#t1">(t1)</a></li>
+          <li                ><a href="#t2">(t2)</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

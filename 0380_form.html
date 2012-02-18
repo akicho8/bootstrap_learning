@@ -1,0 +1,61 @@
+<!-- フォームのフィールドの上にラベルを表示するには？ -->
+<!-- form.form-stacked とするだけ -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>navbar-form</h2>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">Title</a>
+          <div class="container">
+            <form action="#" class="navbar-form">
+              <input type="text" class="input-medium" placeholder="メールアドレス">
+              <input type="password" class="input-medium" placeholder="パスワード">
+              <button type="submit" class="btn btn-primary">ログイン</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <h2>navbar-search (ボタンを入れると縦幅が変わってずれるので注意)</h2>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">Title</a>
+          <div class="container">
+            <form class="navbar-search pull-left">
+              <input type="search" class="search-query" placeholder="検索" />
+              <!-- <button type="submit" class="btn btn-navbar">ログイン</button> -->
+              <!-- <input type="submit" class="btn" value="ログイン" /> -->
+              <!-- <button type="submit" class="btn btn-navbar">ログイン</button> -->
+          </div>
+        </div>
+      </div>
+      <h2>form-horizontal</h2>
+      <form class="form-horizontal">
+        <div class="control-group"><label class="control-label">ラベル</label><div class="controls"><input type="text" /></div></div>
+        <div class="form-actions"><button type="submit" class="btn btn-primary">送信</button></div>
+      </form>
+      <h2>form-vertical</h2>
+      <form class="form-vertical">
+        <div class="control-group"><label class="control-label">ラベル</label><div class="controls"><input type="text" /></div></div>
+        <button type="submit" class="btn btn-primary">送信</button>
+      </form>
+      <h2>form-search input.search-query</h2>
+      <form class="well form-search">
+        <input type="search" class="search-query input-medium" placeholder="検索語" />
+        <button type="submit" class="btn btn-primary">検索</button>
+      </form>
+      <h2>form-inline</h2>
+      <form class="well form-inline">
+        <input type="text" class="input-medium" placeholder="メールアドレス">
+        <input type="password" class="input-medium" placeholder="パスワード">
+        <button type="submit" class="btn btn-primary">ログイン</button>
+      </form>
+    </div>
+  </body>
+</html>

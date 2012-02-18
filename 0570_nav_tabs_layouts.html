@@ -1,0 +1,63 @@
+<!-- タブは上下左右に配置できる -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>上</h3>
+      <div class="tabbable">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#t1" data-toggle="tab">(t1)</a></li>
+          <li               ><a href="#t2" data-toggle="tab">(t2)</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="t1">c1</div>
+          <div class="tab-pane"        id="t2">c2</div>
+        </div>
+      </div>
+
+      <h3>下</h3>
+      <div class="tabbable tabs-below">
+        <div class="tab-content">
+          <div class="tab-pane active" id="t3">c3</div>
+          <div class="tab-pane"        id="t4">c4</div>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#t3" data-toggle="tab">(t3)</a></li>
+          <li               ><a href="#t4" data-toggle="tab">(t4)</a></li>
+        </ul>
+      </div>
+
+      <h3>左</h3>
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#t5" data-toggle="tab">(t5)</a></li>
+          <li               ><a href="#t6" data-toggle="tab">(t6)</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="t5">c5</div>
+          <div class="tab-pane"        id="t6">c6</div>
+        </div>
+      </div>
+
+      <h3>右</h3>
+      <div class="tabbable tabs-right">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#t7" data-toggle="tab">(t7)</a></li>
+          <li               ><a href="#t8" data-toggle="tab">(t8)</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="t7">c7</div>
+          <div class="tab-pane"        id="t8">c8</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

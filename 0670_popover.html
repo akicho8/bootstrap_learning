@@ -1,0 +1,23 @@
+<!-- ポップオーバー -->
+<!-- ツールチップでは表示しきれないとき用 -->
+<!-- ツールチップ(tooltip)を継承しているので使い方はほぼ同じ -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+    <script type="text/coffeescript">
+      $ ->
+        $("#main").popover()
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="height:64px"></div>
+      <a href="#" title="タイトル" data-content="本文" id="main">リンク</a>
+    </div>
+  </body>
+</html>

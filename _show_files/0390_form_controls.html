@@ -1,0 +1,104 @@
+<!-- フォームの基本 -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<script src="jquery.js" type="text/javascript"></script>
+
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+30 / 81
+    <a href="0380_form.html" class="prev">戻る</a>
+    <a href="0400_form_disabled_readonly.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">30. フォームの基本</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <form class="form-horizontal"> <!-- form-vertical にするだけで縦並びになる -->
+        <fieldset>
+          <legend>ちょっと違和感あるけどlegendにフォームのタイトルを書く(下が開きすぎて変じゃないか？)</legend>
+          <div class="control-group">
+            <label class="control-label" for="input1">題名</label>
+            <div class="controls">
+              <input type="text" id="input1" class="input-xlarge" /><span class="help-inline">横に表示</span>
+              <p class="help-block">下に表示</p>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea1">本文</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="cb1">確認</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="cb1" value="1" />label.checkbox input にしないとずれるので注意
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <input type="submit" class="btn" value="保存" />
+            <input type="submit" class="btn btn-primary" value="送信" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;form class=&quot;form-horizontal&quot;&gt; 
+    &lt;fieldset&gt;
+      &lt;legend&gt;ちょっと違和感あるけどlegendにフォームのタイトルを書く(下が開きすぎて変じゃないか？)&lt;/legend&gt;
+      &lt;div class=&quot;control-group&quot;&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;input1&quot;&gt;題名&lt;/label&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+          &lt;input type=&quot;text&quot; id=&quot;input1&quot; class=&quot;input-xlarge&quot; /&gt;&lt;span class=&quot;help-inline&quot;&gt;横に表示&lt;/span&gt;
+          &lt;p class=&quot;help-block&quot;&gt;下に表示&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;control-group&quot;&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;textarea1&quot;&gt;本文&lt;/label&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+          &lt;textarea class=&quot;input-xlarge&quot; id=&quot;textarea1&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;control-group&quot;&gt;
+        &lt;label class=&quot;control-label&quot; for=&quot;cb1&quot;&gt;確認&lt;/label&gt;
+        &lt;div class=&quot;controls&quot;&gt;
+          &lt;label class=&quot;checkbox&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;cb1&quot; value=&quot;1&quot; /&gt;label.checkbox input にしないとずれるので注意
+          &lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-actions&quot;&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;保存&quot; /&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;送信&quot; /&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+30 / 81
+    <a href="0380_form.html" class="prev">戻る</a>
+    <a href="0400_form_disabled_readonly.html" class="next">もっと見る</a>
+</div>
+<p class="__hs_shortcut">ショートカット: [P]rev [N]ext [I]ndex</p></body>
+
+</html>

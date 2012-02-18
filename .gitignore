@@ -1,3 +1,5 @@
 /*.css
-_deploy.sh
+_deploy*
+_renum*
 /README.html
+/twitter.github.com*

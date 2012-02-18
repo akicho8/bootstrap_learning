@@ -1,0 +1,121 @@
+<!-- ツールバー全部入り -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+18 / 81
+    <a href="0260_navbar_dropdown.html" class="prev">戻る</a>
+    <a href="0280_navbar_scrollspy.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">18. ツールバー全部入り</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- ここがリンクになる -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a href="#" class="brand">サイト名</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="#">登録</a></li>
+              <li class="divider-vertical"></li>
+              <li class="active"><a href="#">一覧</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">その他 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">ニコニコ動画</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Youtube</a></li>
+                </ul>
+              </li>
+            </ul>
+            <span class="navbar-text"><a href="#">ユーザー名</a>としてログイン</span>
+            <span class="navbar-text">ユーザー数:1234</span>
+            <form class="navbar-search pull-left">
+              <input type="search" class="search-query" placeholder="検索" />
+            </form>
+            <form class="navbar-form pull-right">
+              <input type="text" class="input-small" placeholder="ユーザー名" />
+              <input type="password" class="input-small" placeholder="パスワード" />
+              <!-- <button type="submit" class="btn">こっちだと少し大きい</button> -->
+              <input type="submit" class="btn btn-primary" value="ログイン" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
+  &lt;div class=&quot;navbar-inner&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      
+      &lt;a class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+      &lt;/a&gt;
+
+      &lt;a href=&quot;#&quot; class=&quot;brand&quot;&gt;サイト名&lt;/a&gt;
+      &lt;div class=&quot;nav-collapse&quot;&gt;
+        &lt;ul class=&quot;nav&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;登録&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;divider-vertical&quot;&gt;&lt;/li&gt;
+          &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;一覧&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;dropdown&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;その他 &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+            &lt;ul class=&quot;dropdown-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ニコニコ動画&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;span class=&quot;navbar-text&quot;&gt;&lt;a href=&quot;#&quot;&gt;ユーザー名&lt;/a&gt;としてログイン&lt;/span&gt;
+        &lt;span class=&quot;navbar-text&quot;&gt;ユーザー数:1234&lt;/span&gt;
+        &lt;form class=&quot;navbar-search pull-left&quot;&gt;
+          &lt;input type=&quot;search&quot; class=&quot;search-query&quot; placeholder=&quot;検索&quot; /&gt;
+        &lt;/form&gt;
+        &lt;form class=&quot;navbar-form pull-right&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;input-small&quot; placeholder=&quot;ユーザー名&quot; /&gt;
+          &lt;input type=&quot;password&quot; class=&quot;input-small&quot; placeholder=&quot;パスワード&quot; /&gt;
+          
+          &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;ログイン&quot; /&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+18 / 81
+    <a href="0260_navbar_dropdown.html" class="prev">戻る</a>
+    <a href="0280_navbar_scrollspy.html" class="next">もっと見る</a>
+</div>
+<p class="__hs_shortcut">ショートカット: [P]rev [N]ext [I]ndex</p></body>
+
+</html>

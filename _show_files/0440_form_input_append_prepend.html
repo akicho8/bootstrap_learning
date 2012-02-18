@@ -1,0 +1,153 @@
+<!-- 入力フィールドの前にフィールドの一部っぽいテキストをくっつけるには？ -->
+<!-- div.input input-prepend span.add-on input で前 -->
+<!-- 前後につけることはできない -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+<link href="htmlshow.css" media="screen" rel="Stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+    <script type="text/coffeescript">
+      $ ->
+        $(".add-on :checkbox").on "click", ->
+          if $(this).attr("checked")
+             method = "addClass"
+          else
+             method = "removeClass"
+          $(this).parents(".add-on")[method]("active")
+    </script>
+  <script src="prettify.js" type="text/javascript"></script>
+<link href="prettify.css" media="screen" rel="stylesheet" type="text/css" />
+<script>$(function(){if(!$.__pp__){prettyPrint();$.__pp__=1}})</script>
+<script src="htmlshow.js" type="text/javascript"></script>
+</head>
+
+
+  <body>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+35 / 81
+    <a href="0430_form_uneditable_input.html" class="prev">戻る</a>
+    <a href="0450_form_help_inline_help_block.html" class="next">もっと見る</a>
+</div>
+    <h1 class="__hs__">35. 入力フィールドの前にフィールドの一部っぽいテキストをくっつけるには？</h1>
+<div class="__hs_container __hs_clearfix">
+
+    <div class="container">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">一部だけを入力させる</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <input type="text" />
+              <span class="add-on">http://</span>
+            </div>
+            <div class="input-append">
+              <input type="text" class="input-small" />
+              <span class="add-on">@docomo.co.jp</span>
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">アイコン指定</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <input type="text" />
+              <label class="add-on"><i class="icon-envelope"></i></label>
+            </div>
+            <div class="input-append">
+              <input type="text" />
+              <label class="add-on"><i class="icon-envelope"></i></label>
+            </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">チェックボックス</label>
+          <div class="controls">
+            <div class="input-prepend">
+              <input type="text" />
+              <label class="add-on active"><input type="checkbox" checked="checked" /></label>←ずれるのはなぜだろう？
+            </div>
+            <div class="input-append">
+              <input type="text" />
+              <label class="add-on active"><input type="checkbox" checked="checked" /></label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<section class="__hs__">
+  <h2 class="__hs__">HTML</h2>
+  <pre class="prettyprint linenums">&lt;div class=&quot;container&quot;&gt;
+  &lt;form class=&quot;form-horizontal&quot;&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+      &lt;label class=&quot;control-label&quot;&gt;一部だけを入力させる&lt;/label&gt;
+      &lt;div class=&quot;controls&quot;&gt;
+        &lt;div class=&quot;input-prepend&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+          &lt;span class=&quot;add-on&quot;&gt;http://&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-append&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;input-small&quot; /&gt;
+          &lt;span class=&quot;add-on&quot;&gt;@docomo.co.jp&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+      &lt;label class=&quot;control-label&quot;&gt;アイコン指定&lt;/label&gt;
+      &lt;div class=&quot;controls&quot;&gt;
+        &lt;div class=&quot;input-prepend&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+          &lt;label class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-envelope&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;input-append&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+          &lt;label class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-envelope&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;control-group&quot;&gt;
+      &lt;label class=&quot;control-label&quot;&gt;チェックボックス&lt;/label&gt;
+      &lt;div class=&quot;controls&quot;&gt;
+        &lt;div class=&quot;input-prepend&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+          &lt;label class=&quot;add-on active&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;&lt;/label&gt;←ずれるのはなぜだろう？
+        &lt;/div&gt;
+        &lt;div class=&quot;input-append&quot;&gt;
+          &lt;input type=&quot;text&quot; /&gt;
+          &lt;label class=&quot;add-on active&quot;&gt;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">JavaScript</h2>
+  <pre class="prettyprint linenums">$ -&gt;
+  $(&quot;.add-on :checkbox&quot;).on &quot;click&quot;, -&gt;
+    if $(this).attr(&quot;checked&quot;)
+       method = &quot;addClass&quot;
+    else
+       method = &quot;removeClass&quot;
+    $(this).parents(&quot;.add-on&quot;)[method](&quot;active&quot;)</pre>
+</section>
+<section class="__hs__">
+  <h2 class="__hs__">MEMO</h2>
+  <pre class="__hs__">div.input input-prepend span.add-on input で前
+前後につけることはできない</pre>
+</section>
+<div class="__hs_paginate">
+<a href="index.html" class="index">■</a>
+35 / 81
+    <a href="0430_form_uneditable_input.html" class="prev">戻る</a>
+    <a href="0450_form_help_inline_help_block.html" class="next">もっと見る</a>
+</div>
+<p class="__hs_shortcut">ショートカット: [P]rev [N]ext [I]ndex</p></body>
+
+</html>

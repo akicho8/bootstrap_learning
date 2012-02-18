@@ -1,0 +1,60 @@
+<!-- 「メッセージが届いています」をだんだん強調していく -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p>メッセージが届いています</p>
+
+      <hr/>
+
+      <p><strong>通知:</strong> メッセージが届いています</p>
+
+      <hr/>
+
+      <span class="label label-info">メッセージが届いています</span>
+
+      <hr/>
+
+      <div class="alert alert-info">
+        <a data-dismiss="alert" class="close">&times;</a>
+        メッセージが届いています
+      </div>
+
+      <hr/>
+
+      <div class="alert alert-block alert-info">
+        <a data-dismiss="alert" class="close">&times;</a>
+        <h4 class="alert-heading">通知:</h4>
+        メッセージが届いています
+        <p>
+          <a href="#" class="btn btn-small">ほっとく</a>
+          <a href="#" class="btn btn-small btn-primary">読む</a>
+        </p>
+      </div>
+
+      <a data-toggle="modal" href="#main" class="btn btn-primary">メッセージが届いています</a>
+
+      <div class="modal hide" id="main">
+        <div class="modal-header">
+          <a data-dismiss="modal" class="close">&times;</a>
+          <h3>通知</h3>
+        </div>
+        <div class="modal-body">
+          <p>メッセージが届いています</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn btn-primary">読む</a>
+          <a href="#" data-dismiss="modal" class="btn">ほっとく</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

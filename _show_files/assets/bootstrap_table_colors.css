@@ -1,0 +1,47 @@
+//
+// テーブルのセルの色
+// Twitter Bootstrap 1.x.x からエクスポート
+//
+
+.table .blue {
+  color: #049cdb;
+  border-bottom-color: #049cdb;
+}
+.table .headerSortUp.blue, .table .headerSortDown.blue {
+  background-color: #ade6fe;
+}
+.table .green {
+  color: #46a546;
+  border-bottom-color: #46a546;
+}
+.table .headerSortUp.green, .table .headerSortDown.green {
+  background-color: #cdeacd;
+}
+.table .red {
+  color: #9d261d;
+  border-bottom-color: #9d261d;
+}
+.table .headerSortUp.red, .table .headerSortDown.red {
+  background-color: #f4c8c5;
+}
+.table .yellow {
+  color: #ffc40d;
+  border-bottom-color: #ffc40d;
+}
+.table .headerSortUp.yellow, .table .headerSortDown.yellow {
+  background-color: #fff6d9;
+}
+.table .orange {
+  color: #f89406;
+  border-bottom-color: #f89406;
+}
+.table .headerSortUp.orange, .table .headerSortDown.orange {
+  background-color: #fee9cc;
+}
+.table .purple {
+  color: #7a43b6;
+  border-bottom-color: #7a43b6;
+}
+.table .headerSortUp.purple, .table .headerSortDown.purple {
+  background-color: #e2d5f0;
+}

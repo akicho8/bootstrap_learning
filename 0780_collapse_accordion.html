@@ -1,0 +1,46 @@
+<!-- アコーディオン -->
+<!-- in があると最初から表示している -->
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <script src="assets/coffee-script.js" type="text/javascript"></script>
+    <script src="assets/bootstrap.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>下にあるdivを開閉したいだけ</h2>
+      <button class="btn btn-primary" data-toggle="collapse" data-target="#main">トグル</button>
+      <div id="main" class="collapse in">
+        コンテンツ
+      </div>
+
+      <h2>アコーディオンの例</h2>
+      <div class="accordion" id="base_accordion">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#base_accordion" href="#collapse1">A</a>
+          </div>
+          <div id="collapse1" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              AC
+            </div>
+          </div>
+        </div>
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#base_accordion" href="#collapse2">B</a>
+          </div>
+          <div id="collapse2" class="accordion-body collapse">
+            <div class="accordion-inner">
+              BC
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
